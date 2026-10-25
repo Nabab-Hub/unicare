@@ -17,7 +17,8 @@ export const VideoCall = () => {
   const socketRef = useRef(null);
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    const socketUrl = import.meta.env?.PROD ? 'https://unicare-api.onrender.com' : 'http://localhost:5000';
+    socketRef.current = io(socketUrl);
 
     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
       .then((currentStream) => {

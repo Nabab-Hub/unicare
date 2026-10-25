@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const isProduction = import.meta.env?.PROD || (typeof process !== 'undefined' && process.env?.NODE_ENV === 'production');
+
 const API = axios.create({
-  baseURL: process.env.NODE_ENV === 'production' ? 'https://unicare-api.onrender.com/api' : '/api',
+  baseURL: isProduction ? 'https://unicare-api.onrender.com/api' : '/api',
   withCredentials: true
 });
 

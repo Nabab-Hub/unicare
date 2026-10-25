@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Activity, Heart, Shield, Phone, Mail } from 'lucide-react';
 
 export const Footer = () => {
@@ -18,21 +19,21 @@ export const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/medicines" className="hover:text-sky-400">Buy Medicines</a></li>
-              <li><a href="/doctors" className="hover:text-sky-400">Book Doctor Appointment</a></li>
-              <li><a href="/blood-tests" className="hover:text-sky-400">Home Blood Tests</a></li>
-              <li><a href="/beds" className="hover:text-sky-400">Hospital Beds Booking</a></li>
-              <li><a href="/ambulances" className="hover:text-sky-400">Emergency Ambulance</a></li>
+              <li><Link to="/medicines" className="hover:text-sky-400">Buy Medicines</Link></li>
+              <li><Link to="/doctors" className="hover:text-sky-400">Book Doctor Appointment</Link></li>
+              <li><Link to="/blood-tests" className="hover:text-sky-400">Home Blood Tests</Link></li>
+              <li><Link to="/beds" className="hover:text-sky-400">Hospital Beds Booking</Link></li>
+              <li><Link to="/ambulances" className="hover:text-sky-400">Emergency Ambulance</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-white font-semibold mb-4">Portals</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/login?role=patient" className="hover:text-sky-400">Patient Portal</a></li>
-              <li><a href="/login?role=doctor" className="hover:text-sky-400">Doctor Portal</a></li>
-              <li><a href="/login?role=provider" className="hover:text-sky-400">Provider / Pharmacy Portal</a></li>
-              <li><a href="/login?role=employee" className="hover:text-sky-400">Employee Portal</a></li>
-              <li><a href="/login?role=authority" className="hover:text-sky-400">Authority / Admin Portal</a></li>
+              <li><Link to="/login?role=patient" className="hover:text-sky-400">Patient Portal</Link></li>
+              <li><Link to="/login?role=doctor" className="hover:text-sky-400">Doctor Portal</Link></li>
+              <li><Link to="/login?role=provider" className="hover:text-sky-400">Provider / Pharmacy Portal</Link></li>
+              <li><Link to="/login?role=employee" className="hover:text-sky-400">Employee Portal</Link></li>
+              <li><Link to="/login?role=authority" className="hover:text-sky-400">Authority / Admin Portal</Link></li>
             </ul>
           </div>
           <div>
