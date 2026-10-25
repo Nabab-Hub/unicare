@@ -5,9 +5,9 @@
   "type": "module",
   "homepage": "https://nabab-hub.github.io/unicare",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
+    "dev": "node api.js && vite",
+    "start": "node api.js && vite",
+    "build": "node api.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
