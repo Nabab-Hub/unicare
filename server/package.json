@@ -4,8 +4,9 @@
   "description": "Unicare Healthcare Platform - Backend API",
   "main": "index.js",
   "scripts": {
-    "start": "node api.js && node index.js",
-    "dev": "node api.js && nodemon index.js"
+    "start": "node init && node index.js",
+    "dev": "node init && nodemon index.js",
+    "seed": "node seed.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
